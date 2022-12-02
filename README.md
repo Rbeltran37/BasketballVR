@@ -22,7 +22,7 @@ https://youtu.be/CxW2mpa8b2I
 # Demos
 Quest APK: https://github.com/Rbeltran37/BasketballVR/releases/download/3PointAPK/3PointContest.apk
 
-PCVR: 
+PCVR: https://github.com/Rbeltran37/BasketballVR/releases/download/3PointPCVR/BasketballVR-3PointContest.zip
 
 # Video Preview  
-
+https://youtu.be/ctomcyjbJXM
