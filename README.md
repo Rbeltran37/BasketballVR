@@ -8,7 +8,7 @@
 # Demos
 Quest APK: https://github.com/Rbeltran37/BasketballVR/releases/download/Alpha/BasketballVR.apk
 
-PCVR: 
+PCVR: https://github.com/Rbeltran37/BasketballVR/releases/download/PCVR/BasketballVR.zip
 
 # Video Preview  
 
