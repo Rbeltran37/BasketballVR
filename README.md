@@ -6,7 +6,7 @@
 *Muiltiplayer with Full body avatar  
 
 # Demos
-Quest APK: 
+Quest APK: https://github.com/Rbeltran37/BasketballVR/releases/download/Alpha/BasketballVR.apk
 
 PCVR: 
 
