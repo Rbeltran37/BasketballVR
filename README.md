@@ -11,4 +11,18 @@ Quest APK: https://github.com/Rbeltran37/BasketballVR/releases/download/Alpha/Ba
 PCVR: https://github.com/Rbeltran37/BasketballVR/releases/download/PCVR/BasketballVR.zip
 
 # Video Preview  
-https://youtu.be/CxW2mpa8b2I
+https://youtu.be/CxW2mpa8b2I  
+
+
+# 3 Point Contest VR
+*Shooting  
+*Scoreboard 
+*Timed  
+
+# Demos
+Quest APK: 
+
+PCVR: 
+
+# Video Preview  
+
