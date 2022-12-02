@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ballistic</name>
+    </assembly>
+    <members>
+        <member name="T:SimpleBallistic.Ballistics">
+            <summary>
+            Ballistic dll
+            </summary>
+        </member>
+        <member name="M:SimpleBallistic.Ballistics.GetPositionAtTime(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Single,System.Single)">
+            <summary>
+            This is to get a position of a projectile at a certain time.
+            </summary>
+            <param name="startingPosition">From where the projectile start</param>
+            <param name="dir">The direction of the projectile (ex : canon muzzle) </param>
+            <param name="force">The force given to the projectile</param>
+            <param name="angle">The projectile angle</param>
+            <param name="time">The time at wich to look where the projectile will be</param>
+            <returns></returns>
+            
+        </member>
+        <member name="M:SimpleBallistic.Ballistics.GetPositionAtTime(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            This is to get a position of a projectile at a certain time.
+            </summary>
+            <param name="startingPosition">From where the projectile start</param>
+            <param name="dir">The direction of the projectile (ex : canon muzzle) </param>
+            <param name="force">The force given to the projectile</param>
+            <param name="angle">The projectile angle</param>
+            <param name="time">The time at wich to look where the projectile will be</param>
+            <param name="customYGravity">Custom gravity applied on the Y axis</param>
+            <returns></returns>
+            
+        </member>
+        <member name="M:SimpleBallistic.Ballistics.GetAngle(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)">
+            <summary>
+            this is to get the needed angle to hit a target with given force, it will return a NULL array if this is not possible
+            index 0 and 1 are the different solution to this shot ( 0 = Big Angle , 1 = a More Direct hit angle)
+            </summary>
+        </member>
+        <member name="M:SimpleBallistic.Ballistics.GetAngle(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Single)">
+            <summary>
+            this is to get the needed angle to hit a target with given force, it will return a NULL array if this is not possible
+            index 0 and 1 are the different solution to this shot ( 0 = Big Angle , 1 = a More Direct hit angle)
+            </summary>
+        </member>
+        <member name="M:SimpleBallistic.Ballistics.GetForce(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)">
+            <summary>
+            this is to get the needed force to hit a target with a given angle
+            </summary>
+        </member>
+        <member name="M:SimpleBallistic.Ballistics.GetForce(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Single)">
+            <summary>
+            this is to get the needed force to hit a target with a given angle
+            </summary>
+        </member>
+        <member name="M:SimpleBallistic.Ballistics.GetAngleAndForceWithTime(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)">
+            <summary>
+            this is to get the Force and the Angle needed to hit a target in a given time
+            returned array index 0 = angle and index 1 = force
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SimpleBallistic.Ballistics.GetAngleAndForceWithTime(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Single)">
+            <summary>
+            this is to get the Force and the Angle needed to hit a target in a given time
+            returned array index 0 = angle and index 1 = force
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SimpleBallistic.Ballistics.TrajectoryProjection(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Single,System.Int32,System.Single,UnityEngine.LineRenderer)">
+            <summary>
+            This function may be used to display the trajectory of a projectile with a given speed and angle AND a custom gravity
+            <param name="startingPos">Starting position (ex : the muzzle) </param>
+            <param name="direction">The direction of the projectile (ex : Gun transform forward)</param>
+            <param name="force">The force that will be applied to the projectile</param>
+            <param name="angle">The angle of the projectile</param>
+            <param name="pointQuantity">The quantity of point that will be on the projection (more mean more accurate) </param>
+            <param name="spaceBetweenPoint">The space between each projected point</param>
+            <param name="lineRenderer">The needed line renderer reference to actualy draw the trajectory</param>
+            </summary>
+        </member>
+        <member name="M:SimpleBallistic.Ballistics.TrajectoryProjection(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Single,System.Int32,System.Single,System.Single,UnityEngine.LineRenderer)">
+            <summary>
+            This function may be used to display the trajectory of a projectile with a given speed and angle AND a custom gravity
+            <param name="startingPos">Starting position (ex : the muzzle) </param>
+            <param name="direction">The direction of the projectile (ex : Gun transform forward)</param>
+            <param name="force">The force that will be applied to the projectile</param>
+            <param name="angle">The angle of the projectile</param>
+            <param name="pointQuantity">The quantity of point that will be on the projection (more mean more accurate) </param>
+            <param name="spaceBetweenPoint">The space between each projected point</param>
+            <param name="customYGravity">The custom gravity that will be applied on the Y axis</param>
+            <param name="lineRenderer">The needed line renderer reference to actualy draw the trajectory</param>
+            </summary>
+        </member>
+        <member name="M:SimpleBallistic.Ballistics.CanHitTarget(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Single,System.Single,System.Single,System.Single,UnityEngine.LayerMask,System.Boolean)">
+            <summary>
+            <param name="startPos">Starting position of the projectile (ex : canon muzzle)</param>
+            <param name="direction">The direction of the projectile (ex : canon transform)</param>
+            <param name="targetPos">Target position</param>
+            <param name="angle">Angle of the projectile</param>
+            <param name="force">Force of the projectile</param>
+            <param name="pointQuantity">Quantity of point to generate along the trajectory (more = better accuracy but will be more costly)</param>
+            <param name="pointSpace">The space between each point that will be generated along the trajectory</param>
+            <param name="projectileSize">The size of the projectile that will be shot</param>
+            <param name="layer">Layer to test</param>
+            <param name="gizmoDebugOn">Should display the debug line?</param>
+            <returns></returns>
+            </summary>
+        </member>
+        <member name="M:SimpleBallistic.Ballistics.CanHitTarget(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,UnityEngine.LayerMask,System.Boolean)">
+            <summary>
+            <param name="startPos">Starting position of the projectile (ex : canon muzzle)</param>
+            <param name="direction">The direction of the projectile (ex : canon transform)</param>
+            <param name="targetPos">Target position</param>
+            <param name="angle">Angle of the projectile</param>
+            <param name="force">Force of the projectile</param>
+            <param name="pointQuantity">Quantity of point to generate along the trajectory (more = better accuracy but will be more costly)</param>
+            <param name="pointSpace">The space between each point that will be generated along the trajectory</param>
+            <param name="projectileSize">The size of the projectile that will be shot</param>
+            <param name="customYGravity">The custom gravity that will be applied on the Y axis</param>
+            <param name="layer">Layer to test</param>
+            <param name="gizmoDebugOn">Should display the debug line?</param>
+            <returns></returns>
+            </summary>
+        </member>
+    </members>
+</doc>

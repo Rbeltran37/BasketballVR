@@ -1,0 +1,9 @@
+1 - include the SimpleBallistic namespace in your script
+
+C# : 
+using SimpleBallistic;
+
+2 - Then to use one of the Ballistic function use the Ballistics class
+
+C# :
+Ballistics.GetAngle(transform.position, m_Target.transform.position, 100);
